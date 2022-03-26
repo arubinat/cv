@@ -1,0 +1,11 @@
+[data-aos="bar-fill"] {
+    width: 0;
+    background-color: $primary-color;
+    opacity: 0;
+    &.aos-animate {
+      width: 100%;
+      background-color: $skill-color;
+      opacity: 1;
+    }
+  }
+  

@@ -1,0 +1,80 @@
+@use "sass:color";
+
+// Fonts
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol";
+$font-family: "Poppins", serif;
+$font-size: 1.1rem;
+$line-height: 1.6rem;
+
+// Typography
+$font-size-base: 1.1rem;
+$font-size-footer: 0.8rem;
+$font-size-sm: .9rem;
+$font-size-lg: 1.25rem;
+$font-family-base: 'Poppins', sans-serif;
+$font-weight-base: 500;
+$font-weight-bold: 800;
+$line-height-base: 1.6rem;
+
+// Headings
+$headings: 'Poppins', sans-serif;
+$font-weight-base: 400;
+$headings-margin-bottom: 1.5rem;
+$headings-line-height: 1.3;
+
+// Corporative colors
+$primary-color: #cc005f;
+$secondary-color: #ffffff;
+$body-color: #151515;
+$section-light: #6e6e6e;
+
+$black: #000000;
+$gray: #f0f0f0;
+
+
+// Header
+$header-height: 80px;
+$header-bg-color: $primary-color;
+
+// Container
+$container-max-width: 1080px;
+
+// Border radius
+$border-radius: .2rem;
+
+// Buttons
+$button-padding: 1rem 2.5rem;
+$button-radius: $border-radius;
+$button-font-weight: $font-weight-bold;
+$button-font-size: $font-size-sm;
+$button-font-family: $headings;
+$button-text-transform: none;
+
+// Transitions
+$transition-base: 0.1s ease-in-out;
+
+//Space and content
+$gutter: 20px;
+$wrapper: 50px;
+
+// Breakpoints
+$xs-breakpoint: 768px;
+$lg-breakpoint: 1024px;
+$xl-breakpoint: 1200px;
+
+// Paragraph
+$paragraph-margin-bottom: 1.5rem;
+
+// Skills
+$skill-color: $black;
+
+// Forms
+$input-bg: $secondary-color;
+$input-border-width: 0;
+$input-border-color: $secondary-color;
+$input-border-radius: $border-radius;
+
+// Footer
+$footer-bg-color: $body-color;

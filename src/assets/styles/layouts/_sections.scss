@@ -1,0 +1,199 @@
+//SECTIONS
+.section {
+    padding: $wrapper 0;
+  
+    .section__title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 0;
+    }
+
+    // Section black
+    &--dark {
+      color: $secondary-color;
+      text-align: center;
+    }
+
+    .section__subtitle {
+      text-align: center;
+      color: $primary-color;
+      text-transform: uppercase;
+      font-size: 1rem;
+      letter-spacing: .3rem;
+      margin-bottom: 3rem;
+    }
+    // Section white
+    &--white {
+      background-color: $secondary-color;
+    }  
+  }
+
+
+//SECTIONS: STILLS
+.skill {
+    margin-bottom: 2rem;
+  
+    .skill__header {
+      display: flex;
+      align-items: center;
+      margin-bottom: .5rem;
+    }
+  
+    .skill__name, .skill__percent {
+      font-size: 1.25rem;
+    }
+  
+    .skill__name {
+      margin: 0;
+    }
+  
+    .skill__percent {
+      font-family: $headings;
+      margin-right: 1rem;
+      font-weight: $font-weight-bold;
+      color: $primary-color;
+    }
+  
+    .skill__bar {
+      position: relative;
+      width: 100%;
+      height: 10px;
+      background-color: $skill-color;
+    }
+  
+    .skill__progress {
+      position: absolute;
+      background-color: $section-light;
+      top: 0;
+      left: 0;
+      height: 100%;
+    }
+  
+  }
+  
+  // Skills AOS
+  #skill-html .skill__progress  { max-width: 90%; }
+  #skill-css .skill__progress   { max-width: 90%; }
+  #skill-js .skill__progress    { max-width: 67%; }
+  #skill-bs .skill__progress    { max-width: 80%; }
+  #skill-php .skill__progress   { max-width: 65%; }
+  #skill-ps .skill__progress    { max-width: 70%; }
+  #skill-sw .skill__progress    { max-width: 90%; }
+  #skill-an .skill__progress    { max-width: 50%; }
+  #skill-c .skill__progress    { max-width: 60%; }
+  #skill-il .skill__progress    { max-width: 70%; }
+  
+
+  //SECTION: EDUCATION
+  .education {
+    margin-bottom: 2rem;
+  
+    &:last-child {
+      margin-bottom: 0;
+    }
+  
+    .education__title {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      position: relative;
+      z-index: 0;
+      padding: 0 0 0 5.5rem;
+  
+      &:before {
+        content: '';
+        display: block;
+        height: 60px;
+        width: 60px;
+        background: $primary-color;
+        margin: 0 0 0.5rem 0;
+        position: absolute;
+        top: 0;
+        left: 20px;
+        z-index: -1;
+      }
+    }
+   
+    .education__date {
+      font-size: 1rem;
+      color: $primary-color;
+      font-weight: $font-weight-base;
+      margin-bottom: 1.25rem;
+      padding: 0 0 0 5.5rem;
+  
+      &--desktop {
+        display: none;
+      }
+    }
+  
+    .education__description {
+      padding: 0 0 0 1.25rem;
+      margin: 0;
+    }
+  
+    @media only screen and (min-width: $xs-breakpoint) {
+      width: calc(50% + 2px);
+      margin-bottom: 0;
+      position: relative;
+      padding-top: 60px;
+      padding-bottom: 60px;
+      text-align: right;
+      border-right: 4px solid $primary-color;
+      padding-right: 40px;
+      min-height: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  
+      .education__title {
+        padding: 0;
+
+        &:before {
+          display: none;
+        }
+      }
+  
+      .education__date {
+        position: absolute;
+        right: -126px;
+        transform: rotate(90deg);
+        margin: 0;
+        padding: 1rem 2rem;
+        background: $primary-color;
+        border-radius: $border-radius $border-radius 0 0;
+        color: $secondary-color;
+        font-size: 1rem;
+        width: 182px;
+        height: 62px;
+        text-align: center;
+  
+        &--desktop {
+          display: block;
+        }
+  
+        &--mobile {
+          display: none;
+        }
+      }
+  
+      .education__description {
+        padding: 0;
+      }
+  
+      &:nth-child(odd) {
+        margin-left: auto;
+        border-left: 4px solid $primary-color;
+        border-right: 0;
+        padding-left: 40px;
+        padding-right: 0;
+        text-align: left;
+        
+        .education__date {
+          transform: rotate(-90deg);
+          left: -126px;
+          background: $primary-color;
+          right: auto;
+        }
+      }
+    }
+  }
+  
